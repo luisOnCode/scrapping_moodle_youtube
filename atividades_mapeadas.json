@@ -1,0 +1,198 @@
+[
+    {
+        "yt-name": "04.08_Sintaxe CSS",
+        "yt-link": "https://www.youtube.com/watch?v=44FM4O-Tawk&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=1&pp=iAQB0gcJCYcKAYcqIYzv",
+        "yt-time": "15:28",
+        "course-title": "Sintaxe CSS",
+        "course-id": "672"
+    },
+    {
+        "yt-name": "04.09_Especificando largura e altura no CSS",
+        "yt-link": "https://www.youtube.com/watch?v=BQ36jRdBauM&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=2&pp=iAQB0gcJCYcKAYcqIYzv",
+        "yt-time": "6:03",
+        "course-title": "Especificando largura e altura no CSS",
+        "course-id": "673"
+    },
+    {
+        "yt-name": "04.10_Definindo margens em elementos com o CSS",
+        "yt-link": "https://www.youtube.com/watch?v=nUcDp5ItiSo&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=3&pp=iAQB",
+        "yt-time": "13:43",
+        "course-title": "Definindo margens em elementos com o CSS",
+        "course-id": "674"
+    },
+    {
+        "yt-name": "04.11_Especificando paddings em elementos com o CSS",
+        "yt-link": "https://www.youtube.com/watch?v=PwWBQXJ2EvY&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=4&pp=iAQB",
+        "yt-time": "11:09",
+        "course-title": "Especificando paddings em elementos com o CSS",
+        "course-id": "675"
+    },
+    {
+        "yt-name": "04.12_Seletores CSS",
+        "yt-link": "https://www.youtube.com/watch?v=TVd7lANz5oI&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=5&pp=iAQB0gcJCYcKAYcqIYzv",
+        "yt-time": "4:50",
+        "course-title": "Seletores CSS",
+        "course-id": "676"
+    },
+    {
+        "yt-name": "04.13_Seletores CSS Seletores simples",
+        "yt-link": "https://www.youtube.com/watch?v=pK7wN6RhQNw&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=6&pp=iAQB",
+        "yt-time": "13:11",
+        "course-title": "Seletores CSS | Seletores simples",
+        "course-id": "677"
+    },
+    {
+        "yt-name": "04.14_Seletores CSS Seletores combinados",
+        "yt-link": "https://www.youtube.com/watch?v=cw9bNFYm9ws&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=7&pp=iAQB",
+        "yt-time": "13:39",
+        "course-title": "Seletores CSS | Seletores combinados",
+        "course-id": "678"
+    },
+    {
+        "yt-name": "04.15_Seletores CSS Seletores de pseudo classes",
+        "yt-link": "https://www.youtube.com/watch?v=2im8N_hZeIY&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=8&pp=iAQB",
+        "yt-time": "29:35",
+        "course-title": "Seletores CSS | Seletores de pseudo-classes",
+        "course-id": "679"
+    },
+    {
+        "yt-name": "04.16_Seletores CSS Seletores de pseudo elementos",
+        "yt-link": "https://www.youtube.com/watch?v=GAVMbqxbYzo&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=9&pp=iAQB",
+        "yt-time": "13:24",
+        "course-title": "Seletores CSS | Seletores de pseudo-elementos",
+        "course-id": "680"
+    },
+    {
+        "yt-name": "04.17_Seletores CSS Seletores de atributos",
+        "yt-link": "https://www.youtube.com/watch?v=EL0g3F8-LEE&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=10&pp=iAQB",
+        "yt-time": "16:17",
+        "course-title": "Seletores CSS | Seletores de atributos",
+        "course-id": "681"
+    },
+    {
+        "yt-name": "04.18_Cores",
+        "yt-link": "https://www.youtube.com/watch?v=Jtkk5xgyhB4&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=11&pp=iAQB0gcJCYcKAYcqIYzv",
+        "yt-time": "5:00",
+        "course-title": "Cores",
+        "course-id": "682"
+    },
+    {
+        "yt-name": "04.19_Cores RGB e RGBA",
+        "yt-link": "https://www.youtube.com/watch?v=fs9dYDAk0MA&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=12&pp=iAQB",
+        "yt-time": "19:20",
+        "course-title": "Cores RGB e RGBA",
+        "course-id": "683"
+    },
+    {
+        "yt-name": "04.20_Cores HEX",
+        "yt-link": "https://www.youtube.com/watch?v=5raNd9KA3Cc&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=13&pp=iAQB",
+        "yt-time": "9:43",
+        "course-title": "Cores HEX",
+        "course-id": "684"
+    },
+    {
+        "yt-name": "04.21_Cores HSL",
+        "yt-link": "https://www.youtube.com/watch?v=nyRo-KMZ88s&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=14&pp=iAQB",
+        "yt-time": "12:45",
+        "course-title": "Cores HSL",
+        "course-id": "685"
+    },
+    {
+        "yt-name": "04.22_Cores Apresentando paleta de cores HEX Extra",
+        "yt-link": "https://www.youtube.com/watch?v=CufhvnUcBlg&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=15&pp=iAQB",
+        "yt-time": "5:08",
+        "course-title": "Cores Apresentando paleta de cores HEX (Extra)",
+        "course-id": "686"
+    },
+    {
+        "yt-name": "04.23_Trabalhando com backgrounds no CSS",
+        "yt-link": "https://www.youtube.com/watch?v=SaWl34bx-J4&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=16&pp=iAQB",
+        "yt-time": "13:34",
+        "course-title": "Trabalhando com backgrounds no CSS",
+        "course-id": "687"
+    },
+    {
+        "yt-name": "04.24_Especificando bordas em elementos com o CSS",
+        "yt-link": "https://www.youtube.com/watch?v=I48zTiob9QE&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=17&pp=iAQB",
+        "yt-time": "14:35",
+        "course-title": "Especificando bordas em elementos com o CSS",
+        "course-id": "688"
+    },
+    {
+        "yt-name": "04.25_Especificando outline em elementos com CSS",
+        "yt-link": "https://www.youtube.com/watch?v=hsQKpOWgAyo&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=18&pp=iAQB",
+        "yt-time": "7:51",
+        "course-title": "Especificando outline em elementos com CSS",
+        "course-id": "689"
+    },
+    {
+        "yt-name": "04.26_Trabalhando com textos no CSS",
+        "yt-link": "https://www.youtube.com/watch?v=64MtVEc-gAU&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=19&pp=iAQB",
+        "yt-time": "12:28",
+        "course-title": "Trabalhando com textos no CSS",
+        "course-id": "690"
+    },
+    {
+        "yt-name": "04.27_Trabalhando com fontes no CSS",
+        "yt-link": "https://www.youtube.com/watch?v=NKOk8I8lKuQ&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=20&pp=iAQB0gcJCYcKAYcqIYzv",
+        "yt-time": "14:32",
+        "course-title": "Trabalhando com fontes no CSS",
+        "course-id": "691"
+    },
+    {
+        "yt-name": "04.28_Estilizando tabelas Parte 1",
+        "yt-link": "https://www.youtube.com/watch?v=HlP4X7krZDw&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=21&pp=iAQB0gcJCYcKAYcqIYzv",
+        "yt-time": "45:50",
+        "course-title": "Estilizando tabelas | 01",
+        "course-id": "692"
+    },
+    {
+        "yt-name": "04.29_Estilizando tabelas Parte 2",
+        "yt-link": "https://www.youtube.com/watch?v=-hMY525ySmE&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=22&pp=iAQB",
+        "yt-time": "13:10",
+        "course-title": "Estilizando tabelas | 02",
+        "course-id": "693"
+    },
+    {
+        "yt-name": "04.30_Trabalhando com imagens no CSS",
+        "yt-link": "https://www.youtube.com/watch?v=slbokwBgdbc&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=23&pp=iAQB",
+        "yt-time": "12:55",
+        "course-title": "Trabalhando com imagens no CSS",
+        "course-id": "694"
+    },
+    {
+        "yt-name": "04.31_CSS Linear Gradients",
+        "yt-link": "https://www.youtube.com/watch?v=eku9Ygrh_os&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=24&pp=iAQB",
+        "yt-time": "11:56",
+        "course-title": "CSS Linear Gradients",
+        "course-id": "695"
+    },
+    {
+        "yt-name": "04.32_CSS Radial Gradients Extra",
+        "yt-link": "https://www.youtube.com/watch?v=eCJXz-u5_Cs&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=25&pp=iAQB",
+        "yt-time": "3:20",
+        "course-title": "CSS Radial Gradients | 01",
+        "course-id": "696"
+    },
+    {
+        "yt-name": "04.33_CSS Radial Gradients",
+        "yt-link": "https://www.youtube.com/watch?v=LNFk13JPg1o&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=26&pp=iAQB",
+        "yt-time": "8:54",
+        "course-title": "CSS Radial Gradients | 02",
+        "course-id": "697"
+    },
+    {
+        "yt-name": "04.34_ CSS Text Shadow e Box Shadow",
+        "yt-link": "https://www.youtube.com/watch?v=ZM1wGajPgMM&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=27&pp=iAQB",
+        "yt-time": "9:01",
+        "course-title": "CSS Text Shadow e Box Shadow",
+        "course-id": "698"
+    },
+    {
+        "yt-name": "04.35_Media Queries",
+        "yt-link": "https://www.youtube.com/watch?v=8P0eqIwbCQM&list=PL81FhGRk91rurnKiqMq908oz8tFlxjMHi&index=28&pp=iAQB",
+        "yt-time": "13:16",
+        "course-title": "Media Queries",
+        "course-id": "699"
+    }
+]
