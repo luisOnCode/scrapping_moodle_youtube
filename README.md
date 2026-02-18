@@ -1,47 +1,59 @@
-# 🤖 Automação Moodle & YouTube (Gerador de JSON)
+# Moodle & YouTube Automation (JSON Generator)
 
-## 🎯 O que este projeto resolve?
-Alimentar plataformas EAD (como o Moodle) com dezenas de vídeos do YouTube pode ser um processo extremamente manual, repetitivo e sujeito a erros humanos. 
+## What does this project solve?
+Feeding e-learning platforms (like Moodle) with dozens of YouTube videos can be an extremely manual, repetitive, and error-prone process. 
 
-Este projeto resolve essa dor extraindo automaticamente os dados de uma playlist do YouTube e pareando-os com os módulos de atividades (H5P) previamente criados no Moodle. O script lê o código-fonte (HTML) de ambas as páginas e cruza as informações, gerando um arquivo JSON padronizado. Esse JSON serve como base confiável para robôs de automação (como o Playwright) realizarem o preenchimento final na plataforma.
+This project solves this pain point by automatically extracting data from a YouTube playlist and pairing it with the activity modules (H5P) previously created in Moodle. The script reads the source code (HTML) of both pages and cross-references the information, generating a standardized JSON file. This JSON serves as a reliable foundation for automation bots (like Playwright) to perform the final data entry on the platform.
 
-## 🔒 Segurança e Privacidade de Dados
-Para garantir a segurança das informações (links privados, dados do curso, IDs internos), **os arquivos HTML extraídos e o JSON gerado não são comitados neste repositório**. 
+## Security and Data Privacy
+To ensure information security (private links, course data, internal IDs), **the extracted HTML files and the generated JSON are not committed to this repository**. 
 
-Eles estão mapeados no nosso `.gitignore`:
+They are globally mapped in our `.gitignore`:
 - `**/*mapeadas.json`
 - `**/*mdl.html`
 - `**/*yt.html`
 
-## 🚀 Como configurar o ambiente (Setup)
+## Environment Setup
 
-Este projeto utiliza Python. Para não conflitar com outras bibliotecas da sua máquina, recomendamos o uso de um Ambiente Virtual (venv).
+This project uses Python. We recommend using a Virtual Environment (venv) to isolate libraries.
 
-1. **Crie a venv:**
-   No terminal, dentro da pasta do projeto, rode:
+1. **Create the venv:**
+   In the terminal, at the project root, run:
    `python -m venv .venv`
 
-2. **Ative a venv:**
+2. **Activate the venv:**
    - **Linux/macOS:** `source .venv/bin/activate`
    - **Windows:** `.venv\Scripts\activate`
 
-3. **Instale as dependências:**
-   Com a venv ativada, instale o interpretador de HTML (BeautifulSoup) e o Playwright:
+3. **Install dependencies:**
+   With the venv activated, install the HTML parser (BeautifulSoup) and Playwright:
    `pip install beautifulsoup4 playwright`
 
-## 🛠️ Como utilizar o Gerador de JSON
+## Folder and File Structure
 
-Para que o script funcione, você precisa extrair manualmente o HTML da página do Moodle e da playlist do YouTube e colocá-los na raiz do projeto.
+The script was designed to process courses modularly. Create a `content/` folder at the root of the project, and inside it, a subfolder for each course/module you intend to process.
 
-### 1. Preparando os arquivos
-- **Moodle:** Acesse a página de edição do curso, copie o HTML (via *Inspect/Elements*) da seção onde estão as atividades e salve o arquivo terminando em `.mdl.html` (ex: `modulo_css.mdl.html`).
-- **YouTube:** Acesse a página da playlist, copie o HTML que envolve os vídeos e salve o arquivo terminando em `.yt.html` (ex: `playlist_css.yt.html`).
+**Structure example:**
+```
+project/
+├── json_generate.py
+└── content/
+    └── data/
+        ├── content.mdl.html
+        └── content.yt.html
+```
 
-💡 **Dica de Ouro (Playlists Invertidas):** Se a playlist do YouTube estiver com a ordem do último vídeo para o primeiro, basta adicionar a palavra `flip` no nome do arquivo (ex: `playlist_css.flip.yt.html`). O script detectará isso e inverterá a lista automaticamente para parear corretamente com o Moodle!
+### Important rules for the subfolder:
+1. Must contain **exactly one** Moodle file (`.mdl.html` extension).
+2. Must contain **exactly one** YouTube file (`.yt.html` extension).
 
-### 2. Rodando o Script
-Com os arquivos na pasta e a `venv` ativada, execute:
-`python json_generate.py`
+> **Flipped Playlists:** If the YouTube playlist is ordered from the last video to the first, simply add the word `flip` to the filename (e.g., `playlist.flip.yt.html`). The script will detect this and reverse the list automatically.
 
-### 3. Resultado
-O script fará uma validação rígida. Se a quantidade de vídeos do YouTube for exatamente igual à quantidade de atividades do Moodle, ele gerará o arquivo `atividades_mapeadas.json` na raiz do projeto, pronto para ser consumido pela automação!
+## How to run the JSON Generator
+
+With the files correctly placed in the course subfolder and the `venv` activated, run the script passing the folder path as an argument:
+
+`python json_generate.py content/data/`
+
+### Result and Strict Validation
+The script will perform a strict count. If the number of YouTube videos is **exactly equal** to the number of Moodle activities, it will generate the `mapping.json` file directly **inside the specified subfolder**, ready to be consumed by the automation bot. If the numbers don't match, the script will output an error alert and halt execution to prevent corrupted data.
