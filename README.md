@@ -26,8 +26,8 @@ This project uses Python. We recommend using a Virtual Environment (venv) to iso
    - **Windows:** `.venv\Scripts\activate`
 
 3. **Install dependencies:**
-   With the venv activated, install the HTML parser (BeautifulSoup) and Playwright:
-   `pip install beautifulsoup4 playwright`
+   With the venv activated, install the HTML parser **BeautifulSoup**:
+   `pip install beautifulsoup4`
 
 ## Folder and File Structure
 
@@ -47,7 +47,7 @@ project/
 1. Must contain **exactly one** Moodle file (`.mdl.html` extension).
 2. Must contain **exactly one** YouTube file (`.yt.html` extension).
 
-> **Flipped Playlists:** If the YouTube playlist is ordered from the last video to the first, simply add the word `flip` to the filename (e.g., `playlist.flip.yt.html`). The script will detect this and reverse the list automatically.
+> **Flipped Playlists:** If the YouTube playlist is ordered from the last video to the first, simply add the extension `.flip` to the filename (e.g., `content.flip.yt.html`). The script will detect this and reverse the list automatically.
 
 ## How to run the JSON Generator
 
