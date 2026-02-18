@@ -47,7 +47,8 @@ project/
 1. Must contain **exactly one** Moodle file (`.mdl.html` extension).
 2. Must contain **exactly one** YouTube file (`.yt.html` extension).
 
-> **Flipped Playlists:** If the YouTube playlist is ordered from the last video to the first, simply add the extension `.flip` to the filename (e.g., `content.flip.yt.html`). The script will detect this and reverse the list automatically.
+#### Flipped Playlists:
+If the YouTube playlist is ordered from the last video to the first, simply add the extension `.flip` to the filename (e.g., `content.flip.yt.html`). The script will detect this and reverse the list automatically.
 
 ## How to run the JSON Generator
 
