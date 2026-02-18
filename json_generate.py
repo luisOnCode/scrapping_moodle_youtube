@@ -1,7 +1,21 @@
 import os
 import sys
 import json
+import re
 from bs4 import BeautifulSoup
+
+def format_course_title(raw_name):
+    # 1. Remove o padrão inicial de números (Ex: "02.01_", "04.10_", "10.05_")
+    clean_name = re.sub(r'^\d+\.\d+_', '', raw_name).strip()
+    
+    # 2. Formatação avançada (baseado no seu padrão de organização):
+    # Transforma " Parte 1" em " | 01"
+    clean_name = re.sub(r'(?i)\s+parte\s+(\d+)$', r' | 0\1', clean_name)
+    
+    # Transforma " Extra" no final da string em " (Extra)"
+    clean_name = re.sub(r'(?i)\s+extra$', r' (Extra)', clean_name)
+    
+    return clean_name
 
 def generate_activities_json(target_folder):
     if not os.path.isdir(target_folder):
@@ -43,23 +57,9 @@ def generate_activities_json(target_folder):
         
         for activity in h5p_activities:
             course_id = activity.get('data-id')
-            name_span = activity.find('span', class_='inplaceeditable')
-            
-            if name_span and name_span.get('data-value'):
-                title = name_span.get('data-value')
-            else:
-                link = activity.find('a', class_='aalink')
-                if link:
-                    title_span = link.find('span', class_='instancename')
-                    if title_span:
-                        hidden_span = title_span.find('span', class_='accesshide')
-                        if hidden_span:
-                            hidden_span.decompose()
-                        title = title_span.get_text(strip=True)
-            
-            if course_id and title:
+            # Não precisamos mais extrair o nome do Moodle, pois ele é "Molde (copiado)"
+            if course_id:
                 moodle_items.append({
-                    "course-title": title,
                     "course-id": course_id
                 })
 
@@ -101,11 +101,15 @@ def generate_activities_json(target_folder):
 
     json_final = []
     for mdl, yt in zip(moodle_items, yt_items):
+        
+        # Aqui a mágica acontece: o título do curso é gerado limpando o nome do YouTube
+        beautiful_title = format_course_title(yt["yt-name"])
+        
         combined_item = {
             "yt-name": yt["yt-name"],
             "yt-link": yt["yt-link"],
             "yt-time": yt["yt-time"],
-            "course-title": mdl["course-title"],
+            "course-title": beautiful_title,
             "course-id": mdl["course-id"]
         }
         json_final.append(combined_item)
