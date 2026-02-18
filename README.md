@@ -41,7 +41,7 @@ Para que o script funcione, você precisa extrair manualmente o HTML da página 
 
 ### 2. Rodando o Script
 Com os arquivos na pasta e a `venv` ativada, execute:
-`python gerador_json.py`
+`python json_generate.py`
 
 ### 3. Resultado
 O script fará uma validação rígida. Se a quantidade de vídeos do YouTube for exatamente igual à quantidade de atividades do Moodle, ele gerará o arquivo `atividades_mapeadas.json` na raiz do projeto, pronto para ser consumido pela automação!

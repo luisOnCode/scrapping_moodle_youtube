@@ -3,3 +3,6 @@
 **/*mapeadas.json
 **/*mdl.html
 **/*yt.html
+content/*
+
+!content/.gitkeep
