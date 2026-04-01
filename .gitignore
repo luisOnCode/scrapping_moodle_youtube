@@ -1,4 +1,5 @@
 .venv/
+.env
 
 **/*mapeadas.json
 **/*mdl.html
